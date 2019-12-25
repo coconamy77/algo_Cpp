@@ -47,4 +47,5 @@ int main() {
 	bubbleSort(cnt);
 	for (int i = 0; i < cnt; i++)
 		printf("%d ", arr[i]);
+	return 0;
 }

@@ -13,12 +13,18 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\열혈cpp">
+      <UniqueIdentifier>{1eb9e7c1-1edc-45f5-ad85-6f5ae4ee0f53}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main_1463_1로만들기.cpp">
+    <ClCompile Include="Main_2583_영역구하기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Main_2583_영역구하기.cpp">
+    <ClCompile Include="HelloWorld.cpp">
+      <Filter>소스 파일\열혈cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Main_1463_1로만들기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

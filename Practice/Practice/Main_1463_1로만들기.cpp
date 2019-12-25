@@ -8,7 +8,7 @@ int f(int n) {
 	y = f(n / 3) + n % 3 + 1;
 	return std::min(x, y);
 }
-int bmbbain() {
+int main() {
 	int n;
 	scanf("%d", &n);
 	printf("%d", f(n));
