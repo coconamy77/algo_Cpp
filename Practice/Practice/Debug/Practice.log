@@ -1,4 +1,6 @@
 ﻿  Main_1463_1로만들기.cpp
-c:\ssafy\algo_cpp\practice\practice\main_1463_1로만들기.cpp(13): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\ssafy\git\algo_cpp\practice\practice\main_1463_1로만들기.cpp(13): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1274): note: 'scanf' 선언을 참조하십시오.
-  Practice.vcxproj -> C:\ssafy\algo_cpp\Practice\Debug\Practice.exe
+  LINK : C:\ssafy\git\algo_Cpp\Practice\Debug\Practice.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
+Main_2583_영역구하기.obj : error LNK2005: _main이(가) Main_1463_1로만들기.obj에 이미 정의되어 있습니다.
+C:\ssafy\git\algo_Cpp\Practice\Debug\Practice.exe : fatal error LNK1169: 여러 번 정의된 기호가 있습니다.
