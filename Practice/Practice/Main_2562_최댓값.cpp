@@ -13,6 +13,6 @@ int main() {
 
 	}
 
-	printf("%d\n %d\n", max, ansi);
+	printf("%d\n%d", max, ansi);
 
 }
