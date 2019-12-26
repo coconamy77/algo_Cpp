@@ -1,5 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
+
 bool check[101][101] = { false };
 int m, n, k, cnt, arr[1000];
 int x1, y1, x2, y2, piece;
