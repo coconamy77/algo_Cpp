@@ -33,5 +33,8 @@
     <ClCompile Include="Main_2869_달팽이는올라가고싶다.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Main_2812_크게만들기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
