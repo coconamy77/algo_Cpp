@@ -151,7 +151,10 @@
     <ClCompile Include="Main_2583_영역구하기.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="Main_2812_크게만들기.cpp" />
+    <ClCompile Include="Main_2751_수정렬하기2.cpp" />
+    <ClCompile Include="Main_2812_크게만들기.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="Main_2869_달팽이는올라가고싶다.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
