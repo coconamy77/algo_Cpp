@@ -2,6 +2,7 @@
 #include <cstdio>
 
 int n1, n2;
+
 int main() {
 	int tmp;
 	scanf("%d", &tmp);
