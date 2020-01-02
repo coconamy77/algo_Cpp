@@ -19,7 +19,7 @@ int main() {
 				break;
 			}
 			if (i == ans) {
-				printf("%d", ans);
+				printf("%d",-1);
 			}
 		}
 	}
