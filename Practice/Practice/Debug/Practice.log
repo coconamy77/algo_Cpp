@@ -1,2 +1,4 @@
-﻿  Main_1463_1로만들기.cpp
+﻿  Main_2839_설탕.cpp
+C:\Development\algo_Cpp\Practice\Practice\Main_2839_설탕.cpp(7,1): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1274): message : 'scanf' 선언을 참조하십시오.
   Practice.vcxproj -> C:\Development\algo_Cpp\Practice\Debug\Practice.exe
