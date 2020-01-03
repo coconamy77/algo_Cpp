@@ -1,10 +1,8 @@
-#define _CRT_SECURE_NO_WARNINGS_
 #include <cstdio>
 #include <algorithm>
-#define
-int arr[1000];
-int N;
+
 int main() {
+	int N, arr[1000];
 	scanf("%d", &N);
 	for (int i = 0; i < N; i++) {
 		scanf("%d", &arr[i]);

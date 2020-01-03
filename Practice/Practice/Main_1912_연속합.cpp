@@ -15,4 +15,5 @@ int main() {
         local_min = min(local_min, sum);
     }
     printf("%d", ans);
+    
 }
