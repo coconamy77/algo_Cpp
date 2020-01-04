@@ -20,6 +20,6 @@ int main() {
 		int n;
 		scanf("%d", &n);
 		a[1] = 1;
-		f(n);
+		printf("%d", f(n));
 	}
 }
