@@ -60,5 +60,8 @@
     <ClCompile Include="Main_1912_연속합.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Main_9095_123더하기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
