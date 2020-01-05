@@ -3,10 +3,15 @@
 
 int a[11];
 int f(int n) {
+	if (n == 0)return 0;
 	if (a[n] != 0) {
 		return a[n];
 	}
 	for (int i = 1; i <=3; i++) {
+		if (i >= n) {
+			a[n]++;
+			break;
+		}
 		a[n] += f(n - i);
 	}
 	return a[n];
