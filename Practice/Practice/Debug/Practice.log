@@ -1,4 +1,6 @@
-﻿  Main_2869_달팽이는올라가고싶다.cpp
-c:\ssafy\git\algo_cpp\practice\practice\main_2869_달팽이는올라가고싶다.cpp(5): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1274): note: 'scanf' 선언을 참조하십시오.
-  Practice.vcxproj -> C:\ssafy\git\algo_Cpp\Practice\Debug\Practice.exe
+﻿  Main_9095_123더하기.cpp
+C:\Development\algo_Cpp\Practice\Practice\Main_9095_123더하기.cpp(23,1): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1274): message : 'scanf' 선언을 참조하십시오.
+C:\Development\algo_Cpp\Practice\Practice\Main_9095_123더하기.cpp(25,1): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1274): message : 'scanf' 선언을 참조하십시오.
+  Practice.vcxproj -> C:\Development\algo_Cpp\Practice\Debug\Practice.exe
