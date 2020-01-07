@@ -18,49 +18,52 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main_2583_영역구하기.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="HelloWorld.cpp">
       <Filter>소스 파일\열혈cpp</Filter>
     </ClCompile>
-    <ClCompile Include="Main_2562_최댓값.cpp">
+    <ClCompile Include="1012_유기농배추.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Main_2869_달팽이는올라가고싶다.cpp">
+    <ClCompile Include="1463_1로만들기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Main_2812_크게만들기.cpp">
+    <ClCompile Include="1912_연속합.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Main_2751_수정렬하기2.cpp">
+    <ClCompile Include="2562_최댓값.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Main_2667_단지번호붙이기.cpp">
+    <ClCompile Include="2583_영역구하기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Main_2588_곱셈.cpp">
+    <ClCompile Include="2588_곱셈.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Main_2884_알람시계.cpp">
+    <ClCompile Include="2667_단지번호붙이기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Main_10817_세수.cpp">
+    <ClCompile Include="2750_수정렬하기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Main_1463_1로만들기.cpp">
+    <ClCompile Include="2751_수정렬하기2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Main_2839_설탕.cpp">
+    <ClCompile Include="2812_크게만들기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Main_2750_수정렬하기.cpp">
+    <ClCompile Include="2839_설탕.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Main_1912_연속합.cpp">
+    <ClCompile Include="2869_달팽이는올라가고싶다.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Main_9095_123더하기.cpp">
+    <ClCompile Include="2884_알람시계.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="9095_123더하기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="10817_세수.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
