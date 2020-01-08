@@ -4,41 +4,42 @@
 
 using namespace std;
 
-int dx[4] = { 0,0,1,-1 };
-int dy[4] = { 1,-1,0,0 };
+int dx[] = { 0,0,1,-1 };
+int dy[] = { 1,-1,0,0 };
 int main() {
-	int T,K,N,M,x,y;
-	queue<int> q;
-	int map[50][50];
+	int T,K,N,M,x,y,tx,ty;
+	int q[5000] = { 0, };
+	int idx=0;
+	int map[52][52] = { 0, };
 	scanf("%d", &T);
-
+	int ans = 0;
 	while (T--) {
 		scanf("%d %d %d", &M, &N, &K);
-		int ans = 0;
+		ans = 0;
 		while (K--) {
 			scanf("%d %d", &y, &x);
 
-			map[x][y] = 1;
+			map[x+1][y+1] = 1;
 		}
 
-		for (int i = 0; i < N; i++) {
-			for (int j = 0; j < M; j++) {
-				if (map[i][j] == 1) {
+		for (int i = 1; i <= N; i++) {
+			for (int j = 1; j <= M; j++) {
+				if (map[i][j]) {
 					ans++;
-					map[i][j] = 0;
-					q.push(i * 100 + j);
-					while (q.size()) {
-						int tx = q.front();
-						q.pop();
-						int ty = tx % 100;
-						tx = tx / 100;
+					q[idx++] = i;
+					q[idx++] = j;
+					while (idx>0) {
+						ty = q[--idx];
+						tx = q[--idx];
+						map[tx][ty] = 0;
 						int nx, ny;
 						for (int d = 0; d < 4; d++) {
 							nx = tx + dx[d];
 							ny = ty + dy[d];
-							if (nx >= 0 && ny >= 0 && nx < N && ny < M && map[nx][ny]==1) {
-								map[nx][ny] = 0;
-								q.push(nx * 100 + ny);
+							
+							if (map[nx][ny]) {
+								q[idx++] = nx;
+								q[idx++] = ny;
 							}
 						}
 					}
@@ -47,4 +48,5 @@ int main() {
 		}
 		printf("%d\n", ans);
 	}
+	return 0;
 }
