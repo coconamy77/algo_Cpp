@@ -3,15 +3,29 @@
 
 int N,arr[15][2], ans=0;
 int getP(int a[]) {
+	int day = 0, price = 0;
 	for (int n = 0; n < N; n++) {
 		if (a[n] == 1) {
-
+			if (day) {
+				return -1;
+			}
+			if (N - n + 1 < arr[n][0]) {
+				return -1;
+			}
+			day = arr[n][0];
+			price += arr[n][1];
+		}
+		else {
+			if (day) {
+				day--;
+			}
 		}
 
 	}
+	return price;
 }
 
-void getD(int a[], int dep) {
+void getD(int* a, int dep) {
 	if (dep == N) {
 		int price = getP(a);
 		if (price != -1) {
@@ -22,7 +36,6 @@ void getD(int a[], int dep) {
 	getD(a, dep + 1);
 	a[dep] = 0;
 	getD(a, dep + 1);
-	return 0;
 }
 
 int main() {
@@ -34,5 +47,5 @@ int main() {
 
 	int a[15];
 	getD(a, 0);
-
+	printf("%d", ans);
 }
