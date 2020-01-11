@@ -25,7 +25,7 @@ int getP(int a[]) {
 	return price;
 }
 
-void getD(int a, int dep) {
+void getD(int a[15], int dep) {
 	if (dep == N) {
 		int price = getP(a);
 		if (price != -1) {
