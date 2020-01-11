@@ -25,16 +25,16 @@ int getP(int a[]) {
 	return price;
 }
 
-void getD(int *a, int dep) {
+void getD(int a, int dep) {
 	if (dep == N) {
 		int price = getP(a);
 		if (price != -1) {
 			ans = ans > price ? ans : price;
 		}
 	}
-	&a[dep] = 1;
+	a[dep] = 1;
 	getD(a, dep + 1);
-	&a[dep] = 0;
+	a[dep] = 0;
 	getD(a, dep + 1);
 }
 
