@@ -25,7 +25,7 @@ int getP(int a[]) {
 	return price;
 }
 
-void getD(int a[15], int dep) {
+void getD(int a[], int dep) {
 	if (dep == N) {
 		int price = getP(a);
 		if (price != -1) {
@@ -45,7 +45,7 @@ int main() {
 
 	}
 
-	int a[15];
+	int a[15] = { 0, };
 	getD(a, 0);
 	printf("%d", ans);
 }
