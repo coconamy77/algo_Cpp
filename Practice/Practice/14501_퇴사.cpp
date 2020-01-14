@@ -29,10 +29,6 @@ void getD(int a[], int dep) {
 	if (dep == N) {
 		int price = getP(a);
 		if (price != -1) {
-			for (int i = 0; i < N; i++) {
-				printf("%d ", a[i]);
-			}
-			printf("\n");
 			ans = ans > price ? ans : price;
 		}
 		return;
