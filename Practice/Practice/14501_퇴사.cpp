@@ -9,10 +9,10 @@ int getP(int a[]) {
 			if (day) {
 				return -1;
 			}
-			if (N - n + 1 < arr[n][0]) {
+			if (N - n  < arr[n][0]) {
 				return -1;
 			}
-			day = arr[n][0];
+			day = arr[n][0]-1;
 			price += arr[n][1];
 		}
 		else {
@@ -29,8 +29,13 @@ void getD(int a[], int dep) {
 	if (dep == N) {
 		int price = getP(a);
 		if (price != -1) {
+			for (int i = 0; i < N; i++) {
+				printf("%d ", a[i]);
+			}
+			printf("\n");
 			ans = ans > price ? ans : price;
 		}
+		return;
 	}
 	a[dep] = 1;
 	getD(a, dep + 1);
@@ -39,7 +44,7 @@ void getD(int a[], int dep) {
 }
 
 int main() {
-
+	scanf("%d", &N);
 	for (int n = 0; n < N; n++) {
 		scanf("%d %d", &arr[n][0],&arr[n][1]);
 
