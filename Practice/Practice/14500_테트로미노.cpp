@@ -17,7 +17,7 @@ void fun(int c, int sum, int i, int j) {
 		nx = i + dx[d];
 		ny = j + dy[d];
 		if (map[nx][ny] > 0 && !vst[nx][ny]) {
-			printf("%d", map[nx][ny]);
+			printf("%d ", map[nx][ny]);
 
 			fun(c + 1, sum + map[nx][ny], nx, ny);
 		}
@@ -32,13 +32,9 @@ int main() {
 			scanf("%d", &map[i][j]);
 		}
 	}
-	for (int i = 1; i <= N; i++) {
-		for (int j = 1; j <= M; j++) {
-			vst[i][j] = true;
+			vst[1][1] = true;
 			
-			fun(1,map[i][j], i, j);
-		}
-	}
+			fun(1,map[1][1], 1, 1);
 
 	printf("%d", ans);
 }
