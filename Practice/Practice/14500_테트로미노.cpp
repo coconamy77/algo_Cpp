@@ -11,13 +11,15 @@ int nx, ny;
 void fun(int c, int sum, int i, int j, bool vst[502][502]) {
 	vst[i][j] = true;
 	if (c == 5) {
+		printf("%d ", map[nx][ny]);
 		ans = ans > sum ? ans : sum;
 	}
-	for (int d = 0; d < 4; d++) {
+	for (int d = 0; d < 4; d++)
+	{
 		nx = i + dx[d];
 		ny = j + dy[d];
 		if (map[nx][ny] > 0 && !vst[nx][ny]) {
-			printf("%d ", map[nx][ny]);
+			
 
 			fun(c + 1, sum + map[nx][ny], nx, ny,vst);
 		}
