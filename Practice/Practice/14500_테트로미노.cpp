@@ -9,17 +9,19 @@ int dy[4] = { 1,-1,0,0 };
 int nx, ny;
 
 void fun(int c, int sum, int i, int j) {
-	vst[i][j] = true;
 	if (c == 4) {
+		printf("%d,%d = %d |",i,j,map[i][j]);
 		ans = ans > sum ? ans : sum;
+		return;
 	}
-	for (int d = 0; d < 4; d++) {
+	for (int d = 0; d < 4; d++)
+	{
 		nx = i + dx[d];
 		ny = j + dy[d];
 		if (map[nx][ny] > 0 && !vst[nx][ny]) {
-			printf("%d ", map[nx][ny]);
-
+			vst[nx][ny] = true;
 			fun(c + 1, sum + map[nx][ny], nx, ny);
+			vst[nx][ny] = false;
 		}
 
 	}
@@ -32,9 +34,13 @@ int main() {
 			scanf("%d", &map[i][j]);
 		}
 	}
-			vst[1][1] = true;
-			
-			fun(1,map[1][1], 1, 1);
+	for (int i = 1; i <= N; i++) {
+		for (int j = 1; j <= M; j++) {
+			vst[i][j] = true;
+			fun(1,map[i][j], i, j);
+			vst[i][j] = false;
+		}
+	}
 
 	printf("%d", ans);
 }
