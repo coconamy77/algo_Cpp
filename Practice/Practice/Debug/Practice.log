@@ -1,2 +1,4 @@
-﻿  14500_테트로미노.cpp
+﻿  2309_일곱난쟁이.cpp
+c:\ssafy\git\algo_cpp\practice\practice\2309_일곱난쟁이.cpp(39): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\stdio.h(1269): note: 'scanf' 선언을 참조하십시오.
   Practice.vcxproj -> C:\ssafy\git\algo_Cpp\Practice\Debug\Practice.exe
