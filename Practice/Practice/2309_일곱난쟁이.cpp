@@ -3,6 +3,7 @@
 
 int hobbit[9];
 bool fin;
+bool ansarr[96];
 
 void getAns(int dep, int ps[9]) {
 	if (fin) return;
@@ -16,8 +17,14 @@ void getAns(int dep, int ps[9]) {
 		if (ans == 100) {
 			for (int i = 0; i < 9; i++) {
 				if (ps[i]) {
-					printf("%d\n", hobbit[i]);
+					ansarr[hobbit[i]] = true;
+					
 				}
+			}
+
+			for (int i = 1; i < 96; i++) {
+				if (ansarr[i])
+				printf("%d\n", i);
 			}
 			fin = true;
 		}
