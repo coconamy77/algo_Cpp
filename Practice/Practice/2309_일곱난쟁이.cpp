@@ -5,12 +5,14 @@ int hobbit[9];
 bool fin;
 bool ansarr[96];
 
-void getAns(int dep, int ps[9]) {
+void getAns(int start, int dep, int ps[9]) {
 	if (fin) return;
 	if (dep == 9) {
+		int check = 0;
 		int ans = 0;
 		for (int i = 0; i < 9; i++) {
 			if (ps[i]) {
+				check++;
 				ans += hobbit[i];
 			}
 		}
@@ -30,12 +32,12 @@ void getAns(int dep, int ps[9]) {
 		}
 	}
 	else {
-		ps[dep] = 0;
-		getAns(dep + 1, ps);
-		ps[dep] = 1;
-		getAns(dep + 1, ps);
+		for (int i = start; i < 9; i++) {
+			ps[dep] = i;
+			getAns(i + 1, dep + 1, ps);
+		}
 	}
-
+	
 }
 
 int main() {
@@ -46,6 +48,6 @@ int main() {
 		scanf("%d", &hobbit[i]);
 	}
 
-	getAns(0,ps);
+	getAns(0,0,ps);
 
 }
