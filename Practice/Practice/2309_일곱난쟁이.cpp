@@ -20,7 +20,7 @@ void getAns(int start, int dep, int ps[9]) {
 			for (int i = 0; i < 9; i++) {
 				if (ps[i]) {
 					ansarr[hobbit[i]] = true;
-					
+					 
 				}
 			}
 
@@ -37,7 +37,7 @@ void getAns(int start, int dep, int ps[9]) {
 			getAns(i + 1, dep + 1, ps);
 		}
 	}
-	
+	     
 }
 
 int main() {
