@@ -1,4 +1,4 @@
-# Algorithm_java
+# algo_Cpp
 
 JAVA Algorithm solution
 
