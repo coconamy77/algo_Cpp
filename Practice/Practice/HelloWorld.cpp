@@ -1,8 +1,12 @@
 #include <iostream>
 using namespace std;
-int main(void) {
-	int num = 20;
-	cout << "Hello World!" << endl;
-	cout << num << ' ' << 'A';
-	cout << ' ' << 3.14 << endl;
+
+int main(){
+
+    int number;
+    cout << "Enter number: "  << endl;
+    cin >> number;
+    cout << "Number is: " << number << endl;
+
+    return 0;
 }
