@@ -51,6 +51,7 @@ int main() {
 	printf("%d", ans);
 }
 
+//0324
 //void func(int idx, int sum) {
 //	if (idx >= n) {
 //		if (max < sum) max = sum;
