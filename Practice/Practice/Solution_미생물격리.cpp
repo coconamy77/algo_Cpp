@@ -1,6 +1,6 @@
-//#include <iostream>
+#include <iostream>
 #include <cstdio>
-//using namespace std;
+using namespace std;
 
 int T;
 int N, M, K;
@@ -56,7 +56,7 @@ void move(int x, int y, int d, int v, int m) {
 
 
 
-}
+};
 
 
 int main() {
